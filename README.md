@@ -1,28 +1,30 @@
-# Personal Portfolio Website
+﻿# Personal Portfolio Website
 
 ## Deskripsi Project
 
-Project ini adalah website portofolio pribadi sederhana yang dibuat untuk menampilkan profil, skill, project, dan kontak. Website ini juga digunakan sebagai media pembelajaran untuk memahami dasar pembuatan website, mulai dari struktur HTML, styling CSS, interaksi JavaScript, hingga persiapan deployment.
+Project ini adalah website portofolio pribadi yang dibuat menggunakan HTML, CSS, dan JavaScript murni tanpa framework. Website menampilkan profil, kemampuan teknis, project, pengalaman, dan kontak. Tujuan utama adalah membuat portofolio yang lebih profesional dan siap untuk fase deployment.
 
 ## Tujuan Project
 
-- Membuat website portofolio pribadi yang dapat diakses orang lain
-- Mempelajari dasar HTML, CSS, dan JavaScript
-- Memahami struktur website statis
-- Menyiapkan project agar nantinya dapat di-deploy
-- Menjadi media dokumentasi project pribadi
+- Membuat website portofolio pribadi yang dapat diakses oleh orang lain
+- Mempelajari dasar HTML, CSS, dan JavaScript dengan struktur yang lebih rapi
+- Memahami struktur website statis untuk kebutuhan deployment
+- Menyiapkan project agar siap di-deploy ke layanan hosting
+- Menjadi dokumentasi project pribadi yang mudah dikembangkan
 
-## Fitur Utama
+## Fitur Website
 
-- Hero section
-- Navbar sticky
-- About section
-- Skills section
-- Projects section
-- Contact section
-- Smooth scrolling
-- Responsive design sederhana
-- Tampilan clean dan modern
+- Hero section dengan foto profil
+- Navbar sticky dan responsive
+- About section profesional dengan highlight
+- Skills section dalam bentuk badge
+- Projects section dengan card lebih informatif
+- Experience section untuk riwayat project akademik
+- Contact section yang jelas dan mudah dibaca
+- Smooth scrolling antar section
+- Responsive design untuk desktop, tablet, dan mobile
+- Dark mode sederhana dengan preferensi pengguna
+- Animasi ringan saat scroll
 
 ## Teknologi yang Digunakan
 
@@ -35,44 +37,55 @@ Project ini adalah website portofolio pribadi sederhana yang dibuat untuk menamp
 ## Struktur Folder
 
 ```
-personal-portfolio/
+portfolio/
+├── assets/
+│   ├── cv/
+│   │   └── CV_Raditya_Alrasyid_Nugroho.pdf
+│   └── images/
+│       ├── profile.jpg
+│       ├── foodsaver.png
+│       ├── stress-system.png
+│       ├── diabetes-analysis.png
+│       └── tap-id.png
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
 ```
 
-- `index.html` untuk struktur utama halaman
-- `style.css` untuk tampilan, layout, warna, dan responsive design
-- `script.js` untuk interaksi sederhana seperti smooth scrolling
-- `README.md` untuk dokumentasi project
+- `index.html` untuk struktur utama halaman dan konten.
+- `style.css` untuk tampilan, layout, warna, responsif, dan tema.
+- `script.js` untuk interaksi seperti smooth scrolling, dark mode, dan menu mobile.
+- `README.md` untuk dokumentasi project.
 
-## Isi Website
+## Penjelasan Tiap Section Website
 
-Website ini terdiri dari beberapa bagian utama:
+- Home: Hero section dengan foto profil, nama, deskripsi, dan tombol aksi.
+- About: Profil singkat dan highlight kemampuan.
+- Skills: Daftar skill dalam bentuk badge.
+- Projects: Kartu project dengan gambar, deskripsi, badge teknologi, dan tombol GitHub/Demo.
+- Experience: Ringkasan project akademik dalam bentuk card.
+- Contact: Informasi kontak dengan format yang rapi.
 
-- Home
-- About
-- Skills
-- Projects
-- Contact
-
-Bagian Projects berisi 4 project berikut:
+## Daftar Project yang Ditampilkan
 
 1. FoodSaver
-   - Aplikasi mobile untuk membantu pengguna mencatat bahan makanan dan memantau tanggal kedaluwarsa.
-   - Teknologi: Kotlin, Compose Multiplatform
+   - Aplikasi mobile untuk membantu pengguna mencatat bahan makanan, memantau tanggal kedaluwarsa, dan mengurangi risiko makanan terbuang.
+   - Teknologi: Kotlin, Compose Multiplatform, Mobile App
 2. Sistem Prediksi Stres Mahasiswa
-   - Sistem berbasis Neuro-Fuzzy/ANFIS untuk memprediksi tingkat stres mahasiswa.
-   - Teknologi: Python, Streamlit, ANFIS
+   - Sistem berbasis Neuro-Fuzzy/ANFIS untuk memprediksi tingkat stres mahasiswa berdasarkan beberapa faktor input dan menampilkan hasil melalui antarmuka Streamlit.
+   - Teknologi: Python, Streamlit, ANFIS, Fuzzy Logic
 3. Analisis Risiko Diabetes
-   - Project data mining untuk menganalisis pengaruh preprocessing terhadap klasifikasi risiko diabetes.
-   - Teknologi: Python, Data Mining
+   - Project data mining untuk menganalisis pengaruh preprocessing data terhadap hasil klasifikasi risiko diabetes.
+   - Teknologi: Python, Data Mining, Preprocessing, Classification
 4. TAP-ID
-   - Konsep platform kartu nama digital NFC yang terintegrasi dengan dashboard real-time.
-   - Teknologi: Web Concept, Business Technology
+   - Konsep platform kartu nama digital berbasis NFC yang terintegrasi dengan dashboard real-time untuk kebutuhan smart networking profesional.
+   - Teknologi: Web Concept, NFC, Dashboard, Business Technology
+5. Tokokita Testing Project
+   - Project pengujian perangkat lunak pada aplikasi toko sederhana yang mencakup unit testing, UI testing, API testing, dan performance testing.
+   - Teknologi: Python, Pytest, Selenium, Flask API, Locust
 
-## Cara Menjalankan Project
+## Cara Menjalankan Project Secara Lokal
 
 1. Clone repository
 2. Masuk ke folder project
@@ -83,19 +96,43 @@ Contoh perintah:
 
 ```bash
 git clone <link-repository>
-cd personal-portfolio
+cd portfolio
 ```
+
+## Cara Mengganti Foto Profil
+
+1. Simpan foto baru di `assets/images/profile.jpg`.
+2. Pastikan nama file sama dengan `profile.jpg`.
+3. Refresh browser untuk melihat perubahan.
+
+## Cara Mengganti CV
+
+1. Ganti file `assets/cv/CV_Raditya_Alrasyid_Nugroho.pdf` dengan versi CV terbaru.
+2. Pastikan nama file tetap sama agar tombol Download CV berfungsi.
+
+## Cara Mengganti Link GitHub/Demo Project
+
+1. Buka file `index.html`.
+2. Temukan bagian project yang ingin diedit.
+3. Ganti nilai `href` pada tombol GitHub atau Demo dengan URL yang benar.
+
+## Rencana Deployment
+
+Project ini sudah disiapkan agar dapat di-deploy ke layanan berikut:
+
+- GitHub Pages
+- Vercel
+- Netlify
 
 ## Rencana Pengembangan Berikutnya
 
-- Menambahkan foto profil
-- Menambahkan tombol download CV
-- Menambahkan link GitHub dan demo project
-- Menambahkan animasi sederhana
-- Membuat dark mode
-- Membuat form kontak
-- Melakukan deployment dengan GitHub Pages atau Vercel
-- Mengembangkan versi lanjutan menggunakan React atau Next.js
+- Menambahkan foto profil asli
+- Menambahkan tombol download CV dengan file asli
+- Menghubungkan project dengan link GitHub dan demo nyata
+- Menambahkan animasi sederhana yang lebih kaya
+- Membuat mode gelap/terang yang lebih lengkap
+- Memperbaiki tampilan mobile dan tablet
+- Menyiapkan deployment di GitHub Pages atau Vercel
 
 ## Identitas Pembuat
 
@@ -105,4 +142,4 @@ cd personal-portfolio
 
 ## Status Project
 
-Project ini masih berada pada fase pertama pengembangan, yaitu pembuatan struktur dasar website portofolio pribadi.
+Saat ini website berada pada fase kedua pengembangan: memperbaiki tampilan, menambahkan section baru, meningkatkan responsif, dan menyiapkan struktur agar lebih siap untuk deployment.

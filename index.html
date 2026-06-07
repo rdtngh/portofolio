@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raditya Alrasyid Nugroho | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand">Raditya</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">Dark</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-card fade-in">
+          <div class="photo-frame" id="photoFrame">
+            <img src="assets/images/profil.jpeg" alt="Foto profil Raditya Alrasyid Nugroho" id="profileImage" data-fallback="true" />
+            <div class="photo-fallback">RA</div>
+          </div>
+        </div>
+
+        <div class="hero-copy fade-in">
+          <span class="hero-tag">Informatics Student | Web &amp; Mobile Developer Enthusiast</span>
+          <h1>Raditya Alrasyid Nugroho</h1>
+          <p>Saya adalah mahasiswa Informatika ITERA yang sedang mengembangkan kemampuan di bidang pengembangan web, mobile, data mining, software testing, dan teknologi berbasis AI.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Lihat Project</a>
+            <a href="assets/cv/CV_Raditya_Alrasyid_Nugroho.pdf" class="btn btn-secondary" target="_blank" rel="noreferrer">Download CV</a>
+            <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt fade-in" id="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2>About</h2>
+          <p>Raditya Alrasyid Nugroho adalah mahasiswa Informatika di Institut Teknologi Sumatera yang memiliki ketertarikan pada pengembangan aplikasi, pengujian perangkat lunak, data mining, dan pemanfaatan teknologi AI. Melalui berbagai project akademik dan eksplorasi mandiri, saya terus mengembangkan kemampuan dalam membangun solusi digital yang sederhana, fungsional, dan mudah digunakan.</p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">Informatics Student</div>
+          <div class="highlight-card">Web &amp; Mobile Development</div>
+          <div class="highlight-card">Data Mining</div>
+          <div class="highlight-card">Software Testing</div>
+          <div class="highlight-card">AI Enthusiast</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <span class="skill-badge">HTML</span>
+          <span class="skill-badge">CSS</span>
+          <span class="skill-badge">JavaScript</span>
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">Kotlin</span>
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">GitHub</span>
+          <span class="skill-badge">Streamlit</span>
+          <span class="skill-badge">PostgreSQL</span>
+          <span class="skill-badge">Data Mining</span>
+          <span class="skill-badge">Software Testing</span>
+          <span class="skill-badge">UI/UX Basic</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2>Projects</h2>
+          <p>Beberapa project yang menunjukkan minat dalam mobile, data mining, AI, dan pengujian perangkat lunak.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card fade-in">
+            <div class="project-image">
+              <img src="assets/images/foodsaver.png" alt="FoodSaver" data-fallback="true" />
+              <div class="project-placeholder">FoodSaver</div>
+            </div>
+            <div class="project-body">
+              <h3>FoodSaver</h3>
+              <p>Aplikasi mobile untuk membantu pengguna mencatat bahan makanan, memantau tanggal kedaluwarsa, dan mengurangi risiko makanan terbuang.</p>
+              <div class="project-badges">
+                <span>Kotlin</span>
+                <span>Compose Multiplatform</span>
+                <span>Mobile App</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-sm">GitHub</a>
+                <a href="#" class="btn btn-sm btn-secondary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-image">
+              <img src="assets/images/stress-system.png" alt="Sistem Prediksi Stres Mahasiswa" data-fallback="true" />
+              <div class="project-placeholder">Stress System</div>
+            </div>
+            <div class="project-body">
+              <h3>Sistem Prediksi Stres Mahasiswa</h3>
+              <p>Sistem berbasis Neuro-Fuzzy/ANFIS untuk memprediksi tingkat stres mahasiswa berdasarkan beberapa faktor input dan menampilkan hasil melalui antarmuka Streamlit.</p>
+              <div class="project-badges">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>ANFIS</span>
+                <span>Fuzzy Logic</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-sm">GitHub</a>
+                <a href="#" class="btn btn-sm btn-secondary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-image">
+              <img src="assets/images/diabetes-analysis.png" alt="Analisis Risiko Diabetes" data-fallback="true" />
+              <div class="project-placeholder">Diabetes</div>
+            </div>
+            <div class="project-body">
+              <h3>Analisis Risiko Diabetes</h3>
+              <p>Project data mining untuk menganalisis pengaruh preprocessing data terhadap hasil klasifikasi risiko diabetes.</p>
+              <div class="project-badges">
+                <span>Python</span>
+                <span>Data Mining</span>
+                <span>Preprocessing</span>
+                <span>Classification</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-sm">GitHub</a>
+                <a href="#" class="btn btn-sm btn-secondary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-image">
+              <img src="assets/images/tap-id.png" alt="TAP-ID" data-fallback="true" />
+              <div class="project-placeholder">TAP-ID</div>
+            </div>
+            <div class="project-body">
+              <h3>TAP-ID</h3>
+              <p>Konsep platform kartu nama digital berbasis NFC yang terintegrasi dengan dashboard real-time untuk kebutuhan smart networking profesional.</p>
+              <div class="project-badges">
+                <span>Web Concept</span>
+                <span>NFC</span>
+                <span>Dashboard</span>
+                <span>Business Technology</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-sm">GitHub</a>
+                <a href="#" class="btn btn-sm btn-secondary">Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-image">
+              <img src="assets/images/placeholder.png" alt="Tokokita Testing Project" data-fallback="true" />
+              <div class="project-placeholder">Tokokita</div>
+            </div>
+            <div class="project-body">
+              <h3>Tokokita Testing Project</h3>
+              <p>Project pengujian perangkat lunak pada aplikasi toko sederhana yang mencakup unit testing, UI testing, API testing, dan performance testing.</p>
+              <div class="project-badges">
+                <span>Python</span>
+                <span>Pytest</span>
+                <span>Selenium</span>
+                <span>Flask API</span>
+                <span>Locust</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-sm">GitHub</a>
+                <a href="#" class="btn btn-sm btn-secondary">Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fade-in" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2>Experience</h2>
+          <p>Beberapa pengalaman project yang mendukung pengembangan kompetensi di bidang aplikasi, AI, data mining, dan software testing.</p>
+        </div>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <h3>Mobile App Development Project - FoodSaver</h3>
+            <p>Mengembangkan aplikasi mobile multiplatform untuk manajemen bahan makanan dan reminder kedaluwarsa.</p>
+          </div>
+          <div class="experience-card">
+            <h3>Computational Intelligence Project - Stress Prediction System</h3>
+            <p>Membangun sistem prediksi tingkat stres mahasiswa menggunakan pendekatan Neuro-Fuzzy/ANFIS dan FIS berbasis aturan.</p>
+          </div>
+          <div class="experience-card">
+            <h3>Data Mining Project - Diabetes Risk Analysis</h3>
+            <p>Menganalisis pengaruh metode preprocessing terhadap hasil klasifikasi risiko diabetes.</p>
+          </div>
+          <div class="experience-card">
+            <h3>Software Testing Project - Tokokita</h3>
+            <p>Melakukan pengujian perangkat lunak mulai dari unit test, UI test, API test, hingga performance test.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt fade-in" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p>Terbuka untuk diskusi project, kolaborasi, atau pengembangan portofolio lebih lanjut.</p>
+        </div>
+        <div class="contact-cards">
+          <a href="mailto:radityalrasyid@gmail.com" class="contact-card">Email: radityalrasyid@gmail.com</a>
+          <a href="https://github.com/rdtngh" target="_blank" rel="noreferrer" class="contact-card">GitHub: github.com/rdtngh</a>
+          <a href="#" class="contact-card">LinkedIn: linkedin.com</a>
+          <a href="#" class="contact-card">Instagram: instagram.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Raditya Alrasyid Nugroho. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

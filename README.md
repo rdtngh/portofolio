@@ -67,54 +67,6 @@ personal-portfolio/
 Contoh perintah:
 
 ```bash
-git clone <link-repository>
-cd personal-portfolio
+git clone https://github.com/rdtngh/portofolio.git
+cd portfolio
 ```
-
-## Cara Mengganti Foto Profil
-
-1. Ganti file di `assets/images/profil.jpeg`
-2. Pastikan nama file tetap `profil.jpeg`
-3. Jika menggunakan nama lain, perbarui path di `index.html`
-
-## Cara Mengganti CV
-
-1. Simpan file CV ke folder `assets/cv/`
-2. Pastikan nama file: `CV_Raditya_Alrasyid_Nugroho.pdf`
-3. Jika ingin nama lain, perbarui link di `index.html`
-
-## Cara Mengganti Link Kontak
-
-1. Buka `index.html`
-2. Perbarui URL di bagian Contact dan tombol Send Email
-3. Perbarui informasi email, GitHub, LinkedIn, atau Instagram
-
-## Cara Deploy ke GitHub Pages
-
-1. Push project ke repository GitHub
-2. Buka Settings repository
-3. Masuk ke Pages
-4. Pada bagian Source pilih branch `main`
-5. Pilih folder `root`
-6. Simpan
-7. Tunggu hingga link website aktif
-
-Contoh link GitHub Pages:
-
-https://rdtngh.github.io/nama-repository/
-
-## Rencana Pengembangan Berikutnya
-
-- Menambahkan section Projects
-- Menambahkan section Experience
-- Menambahkan halaman detail project
-- Menambahkan screenshot project
-- Menambahkan custom domain
-- Mengembangkan versi lanjutan menggunakan React atau Next.js
-
-## Identitas Pembuat
-
-- Nama: Raditya Alrasyid Nugroho
-- Email: radityalrasyid@gmail.com
-- GitHub: https://github.com/rdtngh
-- Status: Mahasiswa Informatika ITERA

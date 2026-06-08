@@ -18,7 +18,8 @@ themeToggle.addEventListener('click', () => {
 
 function setTheme(theme) {
   body.classList.toggle('dark-theme', theme === 'dark');
-  themeToggle.textContent = theme === 'dark' ? 'Light' : 'Dark';
+  themeToggle.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+  themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Aktifkan light mode' : 'Aktifkan dark mode');
   localStorage.setItem('portfolio-theme', theme);
 }
 
@@ -90,7 +91,7 @@ const fadeObserver = new IntersectionObserver(
 
 fadeElements.forEach((element) => fadeObserver.observe(element));
 
-// Fallback image untuk profil dan project jika file belum tersedia
+// Fallback image untuk profil jika file belum tersedia
 loadedImages.forEach((image) => {
   const parent = image.closest('.photo-frame, .project-image');
 
